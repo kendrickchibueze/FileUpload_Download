@@ -1,0 +1,37 @@
+
+<mat-card class="example-card">
+<p class="example-py">
+  <mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>File Upload App</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button>
+    <button mat-fab color="warn" aria-label="Example icon button with a home icon">
+      <mat-icon>home</mat-icon>
+    </button>
+  </mat-toolbar>
+
+</p>
+
+  <div class="input-field col s6">
+    <input style="width: 70%" placeholder="caption" id="caption" type="text" class="validate" [(ngModel)]="caption" required>
+  </div>
+
+  <img [src]="imageUrl"  style="width: 350px" height="300px" alt="">
+  <input type="file" style="color: transparent;"  id="fileInput"    #fileInput (change)="handleFileInput(fileInput.files)" >
+
+
+  <div class="example-button-row">
+    <button style="margin-bottom: 10px"  mat-raised-button color="primary" (click)="onSubmit()" [disabled]="!fileToUpload">Submit</button>
+
+  </div>
+
+
+</mat-card>

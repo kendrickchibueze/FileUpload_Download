@@ -1,0 +1,62 @@
+
+
+.example-card {
+  max-width: 500px;
+  margin: auto;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow:  aliceblue;
+}
+
+
+
+.example-py {
+  margin-bottom: 20px;
+}
+
+.example-card .mat-toolbar {
+  background-color: blue;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+}
+
+
+.example-card .example-py .mat-form-field .mat-input-element {
+  width: 200px;
+  margin: auto;
+}
+
+.example-card img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: auto;
+}
+
+.example-card  input{
+  margin-top: 40px;
+  margin-left: 80px;
+  margin-bottom: 20px;
+  width: 100px;
+}
+
+.example-card .example-py .example-full-width input{
+
+  max-width: 600px;
+}
+
+
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.example-card .example-button-row {
+  margin:auto;
+  display: table-cell;
+  max-width: 600px;
+}
